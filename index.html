@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Quiz Application </title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>  
+  <!-- Home Page -->
+  <div class="start-box box hide">
+    <h4>You'll have 15 seconds to answer each question</h4>
+
+    <h1>Select A Category</h1>
+
+    <div class="category">
+
+    </div>
+
+  </div>
+  
+
+  <!-- Quiz page -->
+  <div class="quiz-box ">
+    <div class="track">
+      <p class="timer">15</p>
+     
+      <p class="score-board">
+        <span>Score:</span>
+        <span class="score"></span>
+      </p> 
+    </div>
+
+    <div class="question-box box">
+      <div class="question-num">1/9</div>
+      <p class="question">
+      
+      </p>
+    </div>
+
+    <div class="answers">
+      
+    </div>
+
+    <p class="description"></p>
+
+
+    <div class="quiz-btn">
+    <button class="nxt-btn btn">Next Question</button>
+    <button class="result-btn btn">See Result</button>
+    </div> 
+
+  </div>
+
+  <!-- Result page -->
+  <div class="result-box box hide">
+    <h1>Quiz Result</h1>
+    <p>Total Questions: <span class="total-question bold">9</span></p>
+    <p>Attempt: <span class="attempt bold">8</span></p>
+    <p>Correct: <span class="correct bold">3</span></p>
+    <p>Wrong: <span class="wrong bold">5</span></p>
+    <p>Percentage: <span class="percentage bold">33.33%</span></p>
+
+    <div class="result-btn">
+
+    </div>
+
+    <button class="start-again btn">Start Again</button>
+    <button class="home btn">Go To Home</button>
+  </div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+
+

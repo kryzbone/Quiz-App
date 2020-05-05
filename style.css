@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url(img/bg.jpg) center fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: #665b49;
+    padding: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bold;
+    color: black;
+}
+
+.btn {
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    outline: none;
+    background-color: #ff8b00;
+    border: 2px solid #b96502;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.start-box {
+    max-width: 800px;
+    margin: 5rem auto 0;
+}
+
+.start-box h1 {
+    font-family: 'Concert One', cursive;
+    color: #f85943;
+}
+
+.start-box div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.start-box div p {
+    flex-basis: calc(50% - 20px);
+    background-color: #ebd8b7;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    border: 2px solid #665b49;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start-box.hide {
+    display: none;
+}
+
+.quiz-box {
+    max-width: 800px;
+    background-color: #ebd8b7;
+    border-radius: 10px;
+    margin: 5rem auto 0;
+    padding: 30px;
+
+}
+
+.quiz-box.hide{
+    display: none;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #059e4c;
+    border: 2px solid #059e4c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+}
+
+.timer.timeout {
+    color: #f85943;
+    border: 2px solid #f85943;
+}
+
+.score-board {
+    font-size: 1.5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.score-board .score {
+    font-weight: bold;
+}
+
+.question-box {
+    border: 2px solid #c2af91;
+    position: relative;
+} 
+
+.question-num {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #c2af91;
+    border-radius: 50%;
+    font-family: 'Concert One', cursive;
+    line-height: 48px;
+    background-color: #fff;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 25px)
+}
+
+.question {
+    font-family: 'Concert One', cursive;
+}   
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.answers .option {
+    flex-basis: calc(50% - 20px);
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #c2af91;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.answers .option.correct-ans {
+    background-color: #11c466;
+    color: #fff;
+    animation: pulse 1s ease;
+}
+
+@keyframes shake {
+    0%, 40%, 75% {
+        transform: translateX(10px);
+    }
+
+    20%, 60%, 95% {
+        transform: translateX(-10px);
+    }
+
+}
+
+.answers .option.wrong-ans {
+    background-color: #f85943;
+    color: #fff;
+    animation: shake 0.5s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+}
+
+.description {
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #c2af91;
+    border-radius: 10px;
+    display: none;
+
+}
+
+ .quiz-btn{
+    text-align:  center;
+}
+
+.nxt-btn {
+    display: none;
+}
+
+.result-btn {
+    display: none;
+}
+
+.result-box  h1 {
+    font-family: 'Concert One', cursive;
+    color: #f85943;
+}
+
+.result-box {
+    max-width: 800px;
+    margin: 5rem auto 0;
+    
+}
+
+.result-box.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+
